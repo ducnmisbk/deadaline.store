@@ -1,300 +1,276 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="main.css">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+        <!-- ===== BOXICONS ===== -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap" rel="stylesheet">
+        <!-- ===== CSS ===== -->
+        <link rel="stylesheet" href="css/styles.css">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <title>Fashion store Website</title>
+    </head>
+    <body>
+        <!--===== HEADER =====-->
+        <header class="l-header">
+            <nav class="nav bd-grid">
+                <div>
+                    <a href="" class="nav__logo">SARA</a>
+                </div>
 
-    <link rel="apple-touch-icon" sizes="114x114" href="${resource(dir: 'images', file: 
-'apple-touch-icon-retina.png')}">
-    <title>De Adaline - Official Website</title>
-</head>
-<body>
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+                        <li class="nav__item"><a href="#featured" class="nav__link">Featured</a></li>
+                        <li class="nav__item"><a href="#new" class="nav__link">New</a></li>
+                        <li class="nav__item"><a href="#subscribed" class="nav__link">Subscribed</a></li>
+                    </ul>
+                </div>
 
-    <nav id="navbar" class="navbar">
-        <ul>
-            <li><i class="fa-solid fa-bars" id="menu_icon"></i></li>
-            <li><a href="#" class="nav-hid">Menu</a></li>
-            <li><i class="fa-solid fa-magnifying-glass" id="search_icon"></i></li>
-            <li><a href="#" class="nav-hid">Search</a></li>
-        </ul>
-        <a href="#" class="brand">De Adaline</a>
-        <ul>
-            <li><a href="#">Wishlist</a></li>
-            <li><a href="#">My Items</a></li>
-        </ul>
-    </nav>
+                <div>
+                    <i class="bx bx-cart nav__cart"></i>
+                    <i class="bx bx-menu nav__toggle" id="nav-toggle"></i>
+                </div>
+            </nav>
+        </header>
 
-    <section class="videobg" id="video1">
-        <video src="assets/Hero Pages/v1.mp4" type="video/mp4" autoplay loop muted plays-inline class="video" ></video>
-        <h2>De Adaline Deep Time</h2>
-        <button>Discover the Collections</button>
-    </section>
-      
-    <section class="videobg" id="video2">
-        <video src="assets/Hero Pages/v2.mp4" type="video/mp4" autoplay loop muted plays-inline class="video" ></video>
-        <h2>Zendaya and the Capucines</h2>
-        <button>Discover the Collections</button>
-    </section>
-      
-    <section class="videobg" id="video3">
-        <video src="assets/Hero Pages/v3.mp4" type="video/mp4" autoplay loop muted plays-inline class="video" ></video>
-        <h2>DA By The Pool</h2>
-        <button>Discover the Collections</button>
-    </section>
-      
-    <section class="imagebg" id="image1">
-        <h2 id="h2-1-imagebg">Taurillon Monogram and</h2>
-        <h2 id="h2-2-imagebg">Monogram Macassar</h2>
-        <button>Discover the Collections</button>
-    </section>
+        <main class="l-main">
+            <!--===== HOME =====-->
+            <section class="home" id="home">
+                <div class="home__container bd-grid">
+                    <div class="home__data">
+                        <h1 class="home__title">NEW <br><span>ARRIVALS</span></h1>
+                        <a href="#featured" class="button">GO SHOPPING</a>
+                    </div>
 
-    <section class="videobg" id="video4">
-        <video src="assets/Hero Pages/v5.mp4" type="video/mp4" autoplay loop muted plays-inline class="video" ></video>
-        <h2>Tambour</h2>
-        <button>Discover the Collections</button>
-    </section>
+                    <img src="img/home.png" class="home__img" alt="">
+                </div>
+            </section>
 
-    <section class="videobg" id="video5">
-        <video src="assets/Hero Pages/v6.mp4" type="video/mp4" autoplay loop muted plays-inline class="video" ></video>
-        <h2>Women's Fall-Winter 2024</h2>
-        <button>Discover the Collections</button>
-    </section>
+            <!--===== COLLECTION =====-->
+            <section class="collection section">
+                <div class="collection__container bd-grid">
+                    <div class="collection__box">
+                        <img src="img/backpackMan.png" alt="" class="collection__img">
 
-    <section class="services">
-        <h2>Services</h2>
-        <div class="grid">
-            <div class="grid-item">
-                <div class="card">
-                    <img class="card-image" src="assets/Service Pages/Service_image1.jpg" alt="service img 1">
-                    <div class="card-content">
-                        <h1>How can we help you?</h1>
-                        <p>Wherever you are, De Adaline Client Advisors will be delighted to assist you.</p>
-                        <button class="card-btn">Contact Us</button>
+                        <div class="collection__data">
+                            <h2 class="collection__title"><span class="collection__subtitle">Men</span><br>Backpack</h2>
+                            <a href="#" class="collection__view">View collection</a>
+                        </div>
+                    </div>
+
+                    <div class="collection__box">
+                        <div class="collection__data">
+                            <h2 class="collection__title"><span class="collection__subtitle">Women</span><br>Backpack</h2>
+                            <a href="#" class="collection__view">View collection</a>
+                        </div>
+
+                        <img src="img/backpackWoman.png" alt="" class="collection__img">
                     </div>
                 </div>
-            </div>
+            </section>
 
-            <div class="grid-item">
-                <div class="card">
-                    <img class="card-image" src="assets/Service Pages/Service_image2.jpg" alt="service img 2">
-                    <div class="card-content">
-                        <h1>Art of Gifting</h1>
-                        <p>Choose the perfect gift from our specially curated selection of products.</p>
-                        <button class="card-btn">Gifts for Her</button>
-                        <button class="card-btn">Gifts for Him</button>
+            <!--===== FEATURED PRODUCTS =====-->
+            <section class="featured section" id="featured">
+                <h2 class="section-title">FEATURED PRODUCTS</h2>
+                <a href="#" class="section-all">View All</a>
+
+                <div class="featured__container bd-grid">
+                    <div class="featured__product">
+                        <div class="featured__box">
+                            <div class="featured__new">NEW</div>
+                            <img src="img/feature1.png" class="featured__img" alt="">
+                        </div>
+
+                        <div class="featured__data">
+                            <h3 class="featured__name">Headphone One Black</h3>
+                            <span class="featured__price">$29</span>
+                        </div>
+                    </div>
+
+                    <div class="featured__product">
+                        <div class="featured__box">
+                            <div class="featured__new">NEW</div>
+                            <img src="img/feature2.png" class="featured__img" alt="">
+                        </div>
+
+                        <div class="featured__data">
+                            <h3 class="featured__name">Speaker Beats Pill</h3>
+                            <span class="featured__price">$199</span>
+                        </div>
+                    </div>
+
+                    <div class="featured__product">
+                        <div class="featured__box">
+                            <div class="featured__new">NEW</div>
+                            <img src="img/feature3.png" class="featured__img" alt="">
+                        </div>
+
+                        <div class="featured__data">
+                            <h3 class="featured__name">Apple Air Pods</h3>
+                            <span class="featured__price">$122</span>
+                        </div>
+                    </div>
+
+                    <div class="featured__product">
+                        <div class="featured__box">
+                            <div class="featured__new">NEW</div>
+                            <img src="img/feature4.png" class="featured__img" alt="">
+                        </div>
+
+                        <div class="featured__data">
+                            <h3 class="featured__name">Smartwatch F9 Negro</h3>
+                            <span class="featured__price">$99</span>
+                        </div>
                     </div>
                 </div>
-            </div>
+            </section>
 
-            <div class="grid-item">
-                <div class="card">
-                    <img class="card-image" src="assets/Service Pages/Service_image3.jpg" alt="service img 3">
-                    <div class="card-content">
-                        <h1>Personalization</h1>
-                        <p>De Adaline's personalization offer spans a wide range of services.</p>
-                        <button class="card-btn">Explore our Collections</button>
+            <!--===== OFFER =====-->
+            <section class="offer section">
+                <div class="offer__bg">
+                    <div class="offer__data">
+                        <h2 class="offer__title">Special Offer</h2>
+                        <p class="offer__description">Special offers discounts for women this week only</p>
+
+                        <a href="#" class="button">SHOP NOW</a>
                     </div>
                 </div>
-            </div>
+            </section>
 
-        </div>
+            <!--===== NEW ARRIVALS =====-->
+            <section class="featured section" id="new">
+                <h2 class="section-title">NEW ARRIVALS</h2>
+                <a href="#" class="section-all">View All</a>
 
-        
-    </section>
-    
-    <section class="links">
-        <hr class="hr">
-        <div class="container">
-            <div class="column">
-              <div class="cell cell-head">HELP</div>
-              <div class="cell"><a href="#" class="links">You can <span>call</span> or <span>email us</span>.</a></div>
-              <div class="cell"><a href="#" class="links">FAQ's</a></div>
-              <div class="cell"><a href="#" class="links">Product Care</a></div>
-              <div class="cell"><a href="#" class="links">Stores</a></div>
-            </div>
-            <div class="column">
-              <div class="cell cell-head">SERVICES</div>
-              <div class="cell"><a href="#" class="links">Repairs</a></div>
-              <div class="cell"><a href="#" class="links">Personalization</a></div>
-              <div class="cell"><a href="#" class="links">Art of Gifting</a></div>
-              <div class="cell"><a href="#" class="links">Download our Apps</a></div>
-            </div>
-            <div class="column">
-              <div class="cell cell-head">ABOUT DE ADALINE</div>
-              <div class="cell"><a href="#" class="links">Fashion Shows</a></div>
-              <div class="cell"><a href="#" class="links">Art & Culture</a></div>
-              <div class="cell"><a href="#" class="links">La Maison</a></div>
-              <div class="cell"><a href="#" class="links">Sustainability</a></div>
-              <div class="cell"><a href="#" class="links">Latest News</a></div>
-              <div class="cell"><a href="#" class="links">Careers</a></div>
-              <div class="cell"><a href="#" class="links">Foundation De Adaline</a></div>
-            </div>
-            <div class="column">
-              <div class="cell cell-head">CONNECT</div>
-              <div class="cell"><a href="#" class="links"><span>Sign up</span> fo first access to latest collections, campaigns and videos.</a></div>
-              <div class="cell"><a href="#" class="links">Follow Us</a></div>
-            </div>
-    </section>
+                <div class="new__container bd-grid">
+                    <div class="new__box">
+                        <img src="img/new1.png" alt="" class="new__img">
 
-    <hr class="hr">
+                        <div class="new__link">
+                            <a href="#" class="button">VIEW PRODUCT</a>
+                        </div>
+                    </div>
 
-    <footer class="footer">
-        
-        <a href="#" class='language'><i class="fa-solid fa-globe globe-icon" ></i><span>ENGLISH (INTL)</span></a>
-        <ul>
-            <li><a href="#">Sitemap</a></li>
-            <li><a href="#">Legal & privacy</a></li>
-            <li><a href="#">Cookies</a></li>
-        </ul>
-    </footer>
+                    <div class="new__box">
+                        <img src="img/new2.png" alt="" class="new__img">
 
-    <div class="last-logo">De Adaline</div>
+                        <div class="new__link">
+                            <a href="#" class="button">VIEW PRODUCT</a>
+                        </div>
+                    </div>
 
+                    <div class="new__box">
+                        <img src="img/new3.png" alt="" class="new__img">
 
-    
+                        <div class="new__link">
+                            <a href="#" class="button">VIEW PRODUCT</a>
+                        </div>
+                    </div>
 
-    <div class="accordian-container">
-        <hr class="hr-hid">
-        <button class="accordion">Help</button>
-            <div class="panel">
+                    <div class="new__box">
+                        <img src="img/new4.png" alt="" class="new__img">
 
-                <a href="#">You can <span>call</span> or <span>email us</span>.</a>
-                <a href="#">FAQ's</a>
-                <a href="#">Product Care</a>
-                <a href="#">Stores</a>
+                        <div class="new__link">
+                            <a href="#" class="button">VIEW PRODUCT</a>
+                        </div>
+                    </div>
 
-            </div>
-        
-        <hr class="hr-hid">
+                    <div class="new__box">
+                        <img src="img/new5.png" alt="" class="new__img">
 
-        <button class="accordion">Services</button>
-            <div class="panel">
-                <a href="#">Repairs</a>
-                <a href="#">Personalization</a>
-                <a href="#">Art of Gifting</a>
-                <a href="#">Download pur Apps</a>
-            </div>
+                        <div class="new__link">
+                            <a href="#" class="button">VIEW PRODUCT</a>
+                        </div>
+                    </div>
 
-        <hr class="hr-hid">
-        
-        <button class="accordion">About De Adaline</button>
-            <div class="panel">
-                <a href="#">Fashion Shows</a>
-                <a href="#">Art & Culture</a>
-                <a href="#">La Maison</a>
-                <a href="#">Sustainability</a>
-                <a href="#">Latest News</a>
-                <a href="#">Careers</a>
-                <a href="#">Foundation of De Adaline</a>
-            </div>
+                    <div class="new__box">
+                        <img src="img/new6.png" alt="" class="new__img">
 
-        <hr class="hr-hid">
-        
-        <button class="accordion">Connect</button>
-            <div class="panel">
-                <a href="#"><span>Sign up</span> fo first access to latest collections, campaigns and videos.</a>
-                
+                        <div class="new__link">
+                            <a href="#" class="button">VIEW PRODUCT</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-                <div class="socialmedia">
+            <!--===== NEWSLETTER =====-->
+            <section class="newsletter section" id="subscribed">
+                <div class="newsletter__container bd-grid">
+                    <div class="newsletter__subscribed">
+                        <h2 class="section-title">OUR NEWSLETTER</h2>
+                        <p class="newsletter__description">Promotion new products and sales. Directly to your inbox.</p>
 
-                    <i class="fa-brands fa-instagram social insta"></i>
+                        <form action="" class="newsletter__form">
+                            <input type="text" class="newsletter__input" placeholder="Enter your email">
+                            <a href="#" class="button">SUBSCRIBE</a>
+                        </form>
+                    </div>
+                </div>
+            </section>
 
-                   <i class="fa-brands fa-facebook-f social"></i>
+            <!--===== SPONSORS =====-->
+            <section class="sponsors section">
+                <div class="sponsors__container bd-grid">
+                    <div class="sponsors__logo">
+                        <img src="img/logo1.png" alt="">
+                    </div>
+                    <div class="sponsors__logo">
+                        <img src="img/logo2.png" alt="">
+                    </div>
+                    <div class="sponsors__logo">
+                        <img src="img/logo3.png" alt="">
+                    </div>
+                    <div class="sponsors__logo">
+                        <img src="img/logo4.png" alt="">
+                    </div>
+                </div>
+            </section>
+        </main>
 
-                    <i class="fa-brands fa-twitter social"></i>
+        <!--===== FOOTER =====-->
+        <footer class="footer section">
+            <div class="footer__container bd-grid">
+                <div class="footer__box">
+                    <h3 class="footer__title">SARA</h3>
+                    <p class="footer__deal">Products store</p>
+                    <a href="#"><img src="img/footerstore1.png" alt="" class="footer__store"></a>
+                    <a href="#"><img src="img/footerstore2.png" alt="" class="footer__store"></a>
+                </div>
 
-                    <i class="fa-brands fa-youtube social"></i>
+                <div class="footer__box">
+                    <h3 class="footer__title">EXPLORE</h3>
+                    <ul>
+                        <li><a href="#" class="footer__link">Home</a></li>
+                        <li><a href="#" class="footer__link">Featured</a></li>
+                        <li><a href="#" class="footer__link">New</a></li>
+                        <li><a href="#" class="footer__link">Subscribe</a></li>
+                    </ul>
+                </div>
 
-                    <i class="fa-brands fa-snapchat social"></i>
+                <div class="footer__box">
+                    <h3 class="footer__title">OUR SERVICES</h3>
+                    <ul>
+                        <li><a href="#" class="footer__link">Pricing</a></li>
+                        <li><a href="#" class="footer__link">Free Shipping</a></li>
+                        <li><a href="#" class="footer__link">Gift Cards</a></li>
+                    </ul>
+                </div>
 
-                    <i class="fa-brands fa-pinterest-p social pin"></i>
-
-                    <i class="fa-brands fa-foursquare social"></i>
-
+                <div class="footer__box">
+                    <h3 class="footer__title">FOLLOW</h3>
+                    <a href="#" class="footer__social"><i class='bx bxl-facebook-square'></i></a>
+                    <a href="#" class="footer__social"><i class='bx bxl-instagram-alt'></i></a>
+                    <a href="#" class="footer__social"><i class='bx bxl-twitter'></i></a>
                 </div>
             </div>
-            <hr class="hr-hid">
-    </div>
-    
 
-    <footer class="mobile-footer">
+            <p class="footer__copy">&#169; 2022 copyright all rights reserved.</p>
+        </footer>
 
-        <ul>
-            <li><a href="#">Sitemap</a></li>
-            <li><a href="#">Legal & privacy</a></li>
-            <li><a href="#">Cookies</a></li>
-        </ul>
-
-        <div class="contain"><a href="#" class='mobile-language'><i class="fa-solid fa-globe globe-icon" ></i><span>ENGLISH (INTL)</span></a></div>
-        
-    </footer>
-
-
-
-
-
-    <script>
-        var lastScrollTop = 0;
-        navbar = document.getElementById("navbar");
-        window.addEventListener("scroll", function () {
-        var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-
-        if (scrollTop > lastScrollTop) {
-            navbar.style.top = "-100px";
-        } else {
-            navbar.style.top = "0";
-            if (scrollTop === 0) {
-                navbar.classList.remove("scrolled"); 
-            } else {
-                navbar.classList.add("scrolled"); 
-                }
-            }
-        lastScrollTop = scrollTop;
-        }
-        );
-
-
-
-//Accordian
-
-        var acc = document.getElementsByClassName("accordion");
-        var i;
-
-        for (i = 0; i < acc.length; i++) {
-            acc[i].addEventListener("click", function() {
-                var panel = this.nextElementSibling;
-                var isActive = this.classList.contains("active");
-
-                // Close all accordion panels
-
-                for (var j = 0; j < acc.length; j++) {
-                    var otherPanel = acc[j].nextElementSibling;
-                    if (otherPanel !== panel) {
-                        otherPanel.style.maxHeight = null;
-                        acc[j].classList.remove("active");
-                    }
-                }
-
-                if (isActive) {
-                    this.classList.remove("active");
-                    panel.style.maxHeight = null;
-                } else {
-                    this.classList.add("active");
-                    panel.style.maxHeight = panel.scrollHeight + "px";
-                    }
-                }
-            );
-        }
-
-
-    </script>
-</body>
+        <!--===== MAIN JS =====-->
+        <script src="js/main.js"></script>
+    </body>
 </html>
